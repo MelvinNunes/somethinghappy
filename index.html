@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note For Weslielia</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+    <script src="animation/aos.js"></script>
+    <link rel="stylesheet" href="animation/aos.css">
+
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <div class="bg-pink-400 h-full items-center" >
+        <div class="flex justify-center pt-36 pb-36 mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="flex flex-col md:flex-row md:max-w-xl mx-10 rounded-lg bg-white shadow-lg">
+              <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="undraw_gift_box_re_vau4.svg" alt="" />
+              <div class="p-6 flex flex-col justify-start">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Wanna know something?</h5>
+                <p class="text-gray-700 text-base mb-4" id="texto" data-aos="fade-up" data-aos-duration="500">
+                  
+                </p>
+              </div>
+              <div class="flex justify-center pb-10" id="botao">
+                <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Sim, quero saber</button>
+            </div>
+            </div>
+          </div>
+          
+    </div>
+    <script>
+        let btn = document.getElementById('botao');
+        let txt = document.getElementById("texto");
+
+        btn.addEventListener("click", () => {
+                txt.append("You've a pretty aura, soul and looks... quick reminder para lembrar-te disso <3...Hope it made you smile!");
+    });
+    </script>
+</body>
+</html>
